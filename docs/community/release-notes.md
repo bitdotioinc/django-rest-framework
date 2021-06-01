@@ -36,6 +36,28 @@ You can determine your currently installed version using `pip show`:
 
 ## 3.12.x series
 
+### 3.12.4
+
+Date: 26th March 2021
+
+* Revert use of `deque` instead of `list` for tracking throttling `.history`. (Due to incompatibility with DjangoRedis cache backend. See #7870) [#7872]
+
+### 3.12.3
+
+Date: 25th March 2021
+
+* Properly handle ATOMIC_REQUESTS when multiple database configurations are used. [#7739]
+* Bypass `COUNT` query when `LimitOffsetPagination` is configured but pagination params are not included on the request. [#6098]
+* Respect `allow_null=True` on `DecimalField`. [#7718]
+* Allow title cased `"Yes"`/`"No"` values with `BooleanField`. [#7739]
+* Add `PageNumberPagination.get_page_number()` method for overriding behavior. [#7652]
+* Fixed rendering of timedelta values in OpenAPI schemas, when present as default, min, or max fields. [#7641]
+* Render JSONFields with indentation in browsable API forms. [#6243]
+* Remove unnecessary database query in admin Token views. [#7852]
+* Raise validation errors when bools are passed to `PrimaryKeyRelatedField` fields, instead of casting to ints. [#7597]
+* Don't include model properties as automatically generated ordering fields with `OrderingFilter`. [#7609]
+* Use `deque` instead of `list` for tracking throttling `.history`. [#7849]
+
 ### 3.12.2
 
 Date: 13th October 2020
@@ -177,6 +199,8 @@ Date: 28th September 2020
 * Don't strict disallow redundant `SerializerMethodField` field name arguments.
 * Don't render extra actions in browable API if not authenticated.
 * Strip null characters from search parameters.
+* Deprecate the `detail_route` decorator in favor of `action`, which accepts a `detail` bool. Use `@action(detail=True)` instead. [gh6687]
+* Deprecate the `list_route` decorator in favor of `action`, which accepts a `detail` bool. Use `@action(detail=False)` instead. [gh6687]
 
 ## 3.9.x series
 
@@ -2270,6 +2294,7 @@ For older release notes, [please see the version 2.x documentation][old-release-
 <!-- 3.10.0 -->
 [gh6680]: https://github.com/encode/django-rest-framework/issues/6680
 [gh6317]: https://github.com/encode/django-rest-framework/issues/6317
+[gh6687]: https://github.com/encode/django-rest-framework/issues/6687
 
 <!-- 3.11.0 -->
 [gh6892]: https://github.com/encode/django-rest-framework/issues/6892
