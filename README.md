@@ -53,7 +53,7 @@ There is a live example API for testing purposes, [available here][sandbox].
 # Requirements
 
 * Python (3.5, 3.6, 3.7, 3.8, 3.9)
-* Django (2.2, 3.0, 3.1)
+* Django (2.2, 3.0, 3.1, 3.2)
 
 We **highly recommend** and only officially support the latest patch release of
 each Python and Django series.
@@ -168,7 +168,7 @@ Or to create a new user:
 
 Full documentation for the project is available at [https://www.django-rest-framework.org/][docs].
 
-For questions and support, use the [REST framework discussion group][group], or `#restframework` on freenode IRC.
+For questions and support, use the [REST framework discussion group][group], or `#restframework` on libera.chat IRC.
 
 You may also want to [follow the author on Twitter][twitter].
 

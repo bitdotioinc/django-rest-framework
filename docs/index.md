@@ -84,7 +84,7 @@ continued development by **[signing up for a paid plan][funding]**.
 REST framework requires the following:
 
 * Python (3.5, 3.6, 3.7, 3.8, 3.9)
-* Django (2.2, 3.0, 3.1)
+* Django (2.2, 3.0, 3.1, 3.2)
 
 We **highly recommend** and only officially support the latest patch release of
 each Python and Django series.
@@ -186,7 +186,7 @@ Framework.
 
 ## Support
 
-For support please see the [REST framework discussion group][group], try the  `#restframework` channel on `irc.freenode.net`, search [the IRC archives][botbot], or raise a  question on [Stack Overflow][stack-overflow], making sure to include the ['django-rest-framework'][django-rest-framework-tag] tag.
+For support please see the [REST framework discussion group][group], try the  `#restframework` channel on `irc.libera.chat`, or raise a  question on [Stack Overflow][stack-overflow], making sure to include the ['django-rest-framework'][django-rest-framework-tag] tag.
 
 For priority support please sign up for a [professional or premium sponsorship plan](https://fund.django-rest-framework.org/topics/funding/).
 
@@ -257,7 +257,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 [funding]: community/funding.md
 
 [group]: https://groups.google.com/forum/?fromgroups#!forum/django-rest-framework
-[botbot]: https://botbot.me/freenode/restframework/
 [stack-overflow]: https://stackoverflow.com/
 [django-rest-framework-tag]: https://stackoverflow.com/questions/tagged/django-rest-framework
 [security-mail]: mailto:rest-framework-security@googlegroups.com
